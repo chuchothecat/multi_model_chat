@@ -1,9 +1,9 @@
 import { LLMModel, Message } from '../types';
 
 // Environment variables for API keys
-const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY || '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';
+const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 const ANTHROPIC_API_KEY = import.meta.env.VITE_ANTHROPIC_API_KEY;
-const APP_MODE = import.meta.env.VITE_APP_MODE || 'production';
+const APP_MODE = import.meta.env.VITE_APP_MODE || 'development';
 
 // Simulated API responses for demonstration
 const simulateDelay = () => new Promise(resolve => setTimeout(resolve, 1000 + Math.random() * 2000));
